@@ -184,17 +184,17 @@ Student.prototype.scope = function() {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// joe.scope();
+joe.scope();
 
 Student.prototype.scopeArrow = () => console.log(this);
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// joe.scopeArrow();
+joe.scopeArrow();
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
-//
+// when joe.scope() is invoked, the scope of 'this' is the Student constructor.
 // 2. What is "this" when joe.scopeArrow() is invoked?
-//
+// when joe.scopeArrow() is invoked, the scope of 'this' is global.
 // 3. Explain why "this" is different when an arrow function is used.
-//
+// when an arrow function is used, the scope changes because the scope of an arrow function is established based on wherever it is defined, in this case, since it was defined outside of anything, its scope is global.
